@@ -7,60 +7,67 @@ body,
   font-family: "Poppins", sans-serif;
 }
 
-/* Custom Navbar Styling */
+/* Custom Navbar Styling - Glassmorphism Effect */
 .custom-navbar {
-  background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   height: 70px;
-  width: 95%; /* Reduce the length */
-  margin: 20px auto 0 auto; /* Moves navbar down by 20px */
-  border-radius: 8px; /* Optional: Rounded corners */
-  transition: box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  width: 95%;
+  margin: 20px auto 0 auto;
+  border-radius: 12px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
 }
 
-/* Stronger shadow on hover */
+/* Stronger shadow and more opacity on hover */
 .custom-navbar:hover {
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-  opacity: 1; /* Fully visible on hover */
-}
-/* Remove underline for mobile */
-@media (max-width: 991px) {
-  .custom-navbar {
-    border-bottom: none; /* Hide the underline on mobile */
-  }
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.3);
 }
 
-/* Navbar Logo - Increase size without affecting navbar height */
 .navbar-brand {
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* Align logo to the left */
 }
 
 .navbar-logo {
-  max-height: 180px; /* Increase size but prevent navbar from growing */
+  max-height: 180px; /* Keep size limit */
   width: auto;
-  position: relative;
-  left: -250px;
-  top: 10px;
+  position: absolute; /* Absolute positioning */
+  left: 20px; /* Adjust left margin */
+}
+
+/* Navbar Items */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Adjusted for better spacing */
+  margin-left: auto; /* Push to right */
 }
 
 .nav-item {
   font-size: 18px;
   font-weight: 500;
-  margin-right: 60px; /* Increase the gap */
   color: #000;
   transition: color 0.3s, transform 0.2s;
-  position: relative;
-  left: 220px;
-  top: 10px;
+  margin-right: 50px;
 }
+
 /* Hover Effect for Navbar Links */
 .nav-item:hover {
   color: #c92f3e;
   transform: translateY(-2px);
 }
 
-/* Contact Button Styling */
+/* Contact Button */
 .contact-btn {
   background: linear-gradient(90deg, #c92f3e, #682c80, #3d8cc9);
   border: none;
@@ -69,8 +76,6 @@ body,
   font-weight: 500;
   border-radius: 8px;
   transition: background 0.3s, transform 0.2s;
-  position: relative;
-  left: 230px;
 }
 
 /* Hover Effect for Contact Button */
@@ -79,20 +84,56 @@ body,
   transform: scale(1.05);
 }
 
-/* Mobile Navbar */
-.custom-offcanvas {
-  background: white;
+/* 🔹 Responsive Design */
+@media (max-width: 991px) {
+  .custom-navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    max-height: 140px;
+    margin-bottom: 10px; /* Adjusts spacing */
+  }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 10px; /* No extra space */
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 0; /* Removes side margins */
+  }
+
+  .contact-btn {
+    width: 90%; /* Adjusts button width */
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 
-/* Mobile Nav Items */
-.mobile-nav-item {
-  font-size: 18px;
-  font-weight: 500;
-  color: black !important; /* Ensure Black Text */
-}
+/* 🔹 Mobile View (Small Screens) */
+@media (max-width: 600px) {
+  .custom-navbar {
+    width: 100%;
+    padding: 5px;
+  }
 
-/* Mobile Contact Button */
-.mobile-contact-btn {
-  width: 100%;
-  text-align: center;
+  .nav-items {
+    gap: 5px; /* Reduces gap */
+    padding: 0;
+  }
+
+  .navbar-logo {
+    max-height: 120px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    margin: 0;
+  }
 }
