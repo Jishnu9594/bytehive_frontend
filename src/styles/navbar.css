@@ -1,0 +1,98 @@
+/* Apply Poppins Font Globally */
+body,
+.custom-navbar,
+.nav-item,
+.contact-btn,
+.mobile-nav-item {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Custom Navbar Styling */
+.custom-navbar {
+  background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 70px;
+  width: 95%; /* Reduce the length */
+  margin: 20px auto 0 auto; /* Moves navbar down by 20px */
+  border-radius: 8px; /* Optional: Rounded corners */
+  transition: box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Stronger shadow on hover */
+.custom-navbar:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  opacity: 1; /* Fully visible on hover */
+}
+/* Remove underline for mobile */
+@media (max-width: 991px) {
+  .custom-navbar {
+    border-bottom: none; /* Hide the underline on mobile */
+  }
+}
+
+/* Navbar Logo - Increase size without affecting navbar height */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  max-height: 180px; /* Increase size but prevent navbar from growing */
+  width: auto;
+  position: relative;
+  left: -250px;
+  top: 10px;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 60px; /* Increase the gap */
+  color: #000;
+  transition: color 0.3s, transform 0.2s;
+  position: relative;
+  left: 220px;
+  top: 10px;
+}
+/* Hover Effect for Navbar Links */
+.nav-item:hover {
+  color: #c92f3e;
+  transform: translateY(-2px);
+}
+
+/* Contact Button Styling */
+.contact-btn {
+  background: linear-gradient(90deg, #c92f3e, #682c80, #3d8cc9);
+  border: none;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  position: relative;
+  left: 230px;
+}
+
+/* Hover Effect for Contact Button */
+.contact-btn:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
+
+/* Mobile Navbar */
+.custom-offcanvas {
+  background: white;
+}
+
+/* Mobile Nav Items */
+.mobile-nav-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: black !important; /* Ensure Black Text */
+}
+
+/* Mobile Contact Button */
+.mobile-contact-btn {
+  width: 100%;
+  text-align: center;
+}

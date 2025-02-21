@@ -1,0 +1,20 @@
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #c92f3e, #682c80, #3d8cc9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Modern Button */
+.about-btn {
+  background: linear-gradient(90deg, #c92f3e, #682c80, #3d8cc9);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #e68a00, #e63e00);
+}
