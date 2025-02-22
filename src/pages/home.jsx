@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import "../styles/home.css";
-import videoSource from "../assets/logo.mp4"; // Ensure path is correct
+import videoSource from "../assets/logo1.mp4"; // Ensure path is correct
 
 const HeroSection = () => {
   return (

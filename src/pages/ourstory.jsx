@@ -4,8 +4,12 @@ import "../styles/ourstory.css";
 const AboutUs = () => {
   return (
     <section className="container my-5">
-      <div className="row">
-        <div className="col-md-6">
+      <div className="row justify-content-end">
+        {" "}
+        {/* Push content to the right */}
+        <div className="col-md-6 text-end">
+          {" "}
+          {/* Align text and button to right */}
           <h2 className="fw-bold display-5 gradient-text">Our Story</h2>
           <p className="text-muted mt-3">
             We started with a passion for innovation and excellence. Our mission

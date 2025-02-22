@@ -10,8 +10,6 @@ function Index() {
       <>
         <CustomNavbar />
         <HeroSection />
-        <AboutUs />
-        <ServiceSection />
       </>
     </Fragment>
   );

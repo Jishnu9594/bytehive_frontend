@@ -5,12 +5,20 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Button Container - Align Right */
+.about-btn-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+  width: 100%;
+}
+
 /* Modern Button */
 .about-btn {
   background: linear-gradient(90deg, #c92f3e, #682c80, #3d8cc9);
   color: white;
   border: none;
   border-radius: 50px;
+  padding: 10px 20px;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
