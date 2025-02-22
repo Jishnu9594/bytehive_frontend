@@ -1,0 +1,123 @@
+/* Import Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* Apply Poppins Font Globally */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Service Section Styling */
+.service-section {
+  background: white;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+/* Gradient Heading */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #c92f3e, #682c80, #3d8cc9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  text-align: left;
+  padding-left: 5%;
+}
+
+/* Random Hexagon Layout */
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  gap: 95px;
+  padding-left: 20%;
+}
+
+/* Hexagon Image */
+.hexagon {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Background Hexagon Image */
+.hexagon-img {
+  width: 250%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Random positioning using nth-child */
+.hexagon:nth-child(1) {
+  transform: translate(10px, -20px);
+}
+
+.hexagon:nth-child(2) {
+  transform: translate(-30px, 40px);
+}
+
+.hexagon:nth-child(3) {
+  transform: translate(20px, -10px);
+}
+
+.hexagon:nth-child(4) {
+  transform: translate(-20px, 30px);
+}
+
+.hexagon:nth-child(5) {
+  transform: translate(30px, -40px);
+}
+
+/* Hover Effect */
+.hexagon:hover {
+  transform: scale(1.05);
+}
+
+/* Inside Hexagon Content */
+.hex-content {
+  position: absolute;
+  width: 80%;
+  color: black;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Service Titles with Poppins */
+.service-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Service Description with Poppins */
+.service-description {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Read More Button */
+.read-more-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #c92f3e, #682c80, #3d8cc9);
+  color: white;
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+/* Read More Button Hover */
+.read-more-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #e68a00, #e63e00);
+}

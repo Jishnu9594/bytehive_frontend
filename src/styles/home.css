@@ -35,7 +35,7 @@
 /* Gradient Text */
 .hero-title {
   font-size: 10rem;
-  font-weight: 800; /* Increased font weight */
+  font-weight: 600; /* Increased font weight */
   line-height: 8rem;
   font-family: "Poppins";
 }
@@ -62,7 +62,7 @@
 
 .hero-button:hover {
   transform: scale(1.05);
-  background: linear-gradient(45deg, #e68a00, #e63e00);
+  background: linear-gradient(90deg, #3d8cc9, #682c80, #c92f3e);
 }
 
 /* Small Paragraph */

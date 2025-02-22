@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* Content Over Video */}
       <Container className="content-container">
         <h1 className="hero-title">
-          Innovate Transform <span className="gradient-text">Succeed</span>
+          LET'S MAKE <span className="gradient-text">IT GREAT</span>
         </h1>
 
         <p className="hero-paragraph">
